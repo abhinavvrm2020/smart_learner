@@ -1,0 +1,19 @@
+.navbar {
+    background-color: var(pink);
+}
+
+.navbar a {
+    font-size: 1.5rem;    
+}
+
+.navbar-toggler {
+    background-color: pink;
+}
+
+.navbar a:hover {
+    color : var(--main-color)
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
