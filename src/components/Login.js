@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./firebase.js";
 import { UserContext } from '../App';
 import InputControl from "./InputControl.js";
-import "./login.css";
+import "./css/login.css";
 
 const Login = () => {
     const {state,dispatch} = useContext(UserContext);
@@ -39,12 +39,10 @@ const Login = () => {
   };
 
     return (
-
         <>
-            <div className={"container"}>
-                <div className={"innerBox"}>
-                    <h1 className={"heading"}>Login</h1>
-
+            <div className="container">
+                <div className="innerBox">
+                    <h1 className="heading">Login</h1>
                     <InputControl
                         label="Email"
                         onChange={(event) =>
@@ -60,8 +58,8 @@ const Login = () => {
                         placeholder="Enter Password"
                     />
 
-                    <div className={"footer"}>
-                        <b className={"error"}>{errorMsg}</b>
+                    <div className="footer">
+                        <b className="error">{errorMsg}</b>
                         <button disabled={submitButtonDisabled} onClick={handleSubmission}>
                             Login
                         </button>
@@ -73,7 +71,6 @@ const Login = () => {
                         </p>
                     </div>
                 </div>
-
             </div>
 
         </>

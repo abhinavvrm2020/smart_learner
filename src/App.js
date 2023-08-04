@@ -5,6 +5,9 @@ import React,{createContext, useReducer} from 'react';
 import Signup from './components/Signup.js';
 import Login from './components/Login.js';
 import Cards from "./components/Cards.jsx";
+import Card1 from "./components/Card1.jsx";
+import Card2 from "./components/Card2.jsx";
+import Card3 from "./components/Card3.jsx";
 import Logout from './components/Logout.js';
 import {initialState,reducer} from "../src/reducer/UseReducer.js";
 
@@ -23,9 +26,17 @@ const Routing = () => {
     <Route path = "/signin" element = {<Login />}>
     </Route>
 
-    {/* <Route path = "/topic" element = {<Topic />}>
-    </Route> */}
+    <Route path = "/card" element = {<Cards /> }>
+    </Route>
 
+    <Route path = "/card1" element = {<Card1 /> }>
+    </Route>
+  
+    <Route path = "/card2" element = {<Card2 /> }>
+    </Route>
+
+    <Route path = "/card3" element = {<Card3 /> }>
+    </Route>
     <Route path = "/logout" element = {<Logout />}>
     </Route>
   </Routes>

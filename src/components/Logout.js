@@ -1,7 +1,7 @@
 import React from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from "./firebase.js";
-import './logout.css'; // Replace with the path to your logout.css file
+import './css/logout.css'; // Replace with the path to your logout.css file
 import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
