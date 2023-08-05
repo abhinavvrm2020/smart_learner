@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./InputControl.css";
+import "./css/InputControl.css";
 
 const  InputControl=(props)=> {
   return (
