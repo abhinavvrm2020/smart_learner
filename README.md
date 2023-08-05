@@ -1,3 +1,10 @@
+# Screenshots of the project
+![pic1](https://github.com/piyush1-20/SmartLearner/assets/91124206/cfb0483a-8562-4f80-adcf-edeccdfc1073)
+![pic4](https://github.com/piyush1-20/SmartLearner/assets/91124206/64f289d8-1ea1-4325-9cbc-91c54a1ccc92)
+![pic5](https://github.com/piyush1-20/SmartLearner/assets/91124206/a47cdfb4-e784-4612-93d7-8c1d9b9fb61d)
+![pic2](https://github.com/piyush1-20/SmartLearner/assets/91124206/bb60f8b5-0972-45ab-bd06-5d6332ed5c43)
+![pic3](https://github.com/piyush1-20/SmartLearner/assets/91124206/465ce73c-975d-4600-b9f2-ecdd754601d0)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
