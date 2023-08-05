@@ -1,6 +1,6 @@
 import Home from "./Home.js";
 import Navbar from "./components/Navbar.js";
-import { Route,Routes } from "react-router-dom";
+import { Route,Routes} from "react-router-dom";
 import React,{createContext, useReducer} from 'react';
 import Signup from './components/Signup.js';
 import Login from './components/Login.js';
@@ -16,29 +16,28 @@ export const UserContext = createContext();
 
 const Routing = () => {
   return (
-  <Routes>
-    <Route path = "/" element = {<Cards /> }>
-    </Route>
+    <Routes>
+    <Route path = "/" element = {<Cards /> } />    
     
-    <Route path = "/signup" element = {<Signup />}>
-    </Route>
+    <Route path = "/signup" element = {<Signup />} />
+    
 
-    <Route path = "/signin" element = {<Login />}>
-    </Route>
+    <Route path = "/signin" element = {<Login />} />
+    
 
-    <Route path = "/card" element = {<Cards /> }>
-    </Route>
+    <Route path = "/card" element = {<Cards /> } />
+    
 
-    <Route path = "/card1" element = {<Card1 /> }>
-    </Route>
+    <Route path = "/card1" element = {<Card1 /> } />
+    
   
-    <Route path = "/card2" element = {<Card2 /> }>
-    </Route>
+    <Route path = "/card2" element = {<Card2 /> } />
+    
 
-    <Route path = "/card3" element = {<Card3 /> }>
-    </Route>
-    <Route path = "/logout" element = {<Logout />}>
-    </Route>
+    <Route path = "/card3" element = {<Card3 /> } />
+    
+    <Route path = "/logout" element = {<Logout />} />
+    
   </Routes>
   )
 }

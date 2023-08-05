@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink ,Link} from 'react-router-dom';
 import { UserContext } from '../App';
 import './css/Navbar.css';
 import { NavDropdown } from 'react-bootstrap';
@@ -12,12 +12,21 @@ const Navbar = () => {
       return (
         <>
         <li className='nav-item'>
-         <NavDropdown title="Topic" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/card">Operating System</NavDropdown.Item>
-            <NavDropdown.Item href="/card1">Data Structures</NavDropdown.Item>
-            <NavDropdown.Item href="/card2">Object Oriented Programming</NavDropdown.Item>
-            <NavDropdown.Item href="/card3">Database Management System</NavDropdown.Item>
-          </NavDropdown></li>
+         <NavDropdown title="Topic" id="basic-nav-dropdown ">
+            <NavLink to="/card" className="dropdown-item custom-dropdown-item">
+                Operating System
+              </NavLink>
+              <NavLink to="/card1" className="dropdown-item custom-dropdown-item">
+                Data Structures
+              </NavLink>
+              <NavLink to="/card2" className="dropdown-item custom-dropdown-item">
+                Object Oriented Programming
+              </NavLink>
+              <NavLink to="/card3" className="dropdown-item custom-dropdown-item">
+                Database Management System
+              </NavLink>
+            </NavDropdown>
+        </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/logout">
               Log Out
@@ -30,11 +39,20 @@ const Navbar = () => {
         <>
         <li className='nav-item'>
          <NavDropdown title="Topic" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/card">Operating System</NavDropdown.Item>
-            <NavDropdown.Item href="/card1">Data Structures and Algorithms</NavDropdown.Item>
-            <NavDropdown.Item href="/card2">Object Oriented Programming</NavDropdown.Item>
-            <NavDropdown.Item href="/card3">Database Management System</NavDropdown.Item>
-          </NavDropdown></li>
+            <NavLink to="/card" className="dropdown-item custom-dropdown-item">
+                Operating System
+              </NavLink>
+              <NavLink to="/card1" className="dropdown-item custom-dropdown-item">
+                Data Structures
+              </NavLink>
+              <NavLink to="/card2" className="dropdown-item custom-dropdown-item">
+                Object Oriented Programming
+              </NavLink>
+              <NavLink to="/card3" className="dropdown-item custom-dropdown-item">
+                Database Management System
+              </NavLink>
+            </NavDropdown>
+        </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/signup">
               SignUp
